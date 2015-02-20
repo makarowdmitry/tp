@@ -70,7 +70,7 @@ INSTALLED_APPS = (
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',
+#    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -90,9 +90,9 @@ DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'teleport_db',
-        'USER': 'makarowdmitry',
-        'PASSWORD': 'dmi1q6TcvF3',
-        'HOST': 'localhost',
+        'USER': 'teleport09',
+        'PASSWORD': 'oijwm802jLK',
+        'HOST': 'teleport-general.cdkqhv3svrdy.eu-central-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -113,7 +113,7 @@ USE_TZ = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 
-MEDIA_ROOT = '/home/t/webapps/tp/tp/uploads/'
+MEDIA_ROOT = '/opt/webapps/tp/tp/uploads/'
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
@@ -123,7 +123,7 @@ MEDIA_URL = '/uploads/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/media/'
 
 
 EMAIL_HOST = 'email-smtp.eu-west-1.amazonaws.com'
